@@ -19,14 +19,11 @@ public class IngestionController {
     }
 
     @PostMapping("/ingest")
-    public ResponseEntity<IngestedRecord> ingest(@RequestBody IngestionRequest request) {
+    public ResponseEntity<List<IngestedRecord>> ingest(@RequestBody IngestionRequest request) {
 
-        IngestedRecord record = ingestionService.ingest(
-                request.getSource(),
-                request.getEndpoint()
+        return ResponseEntity.ok(
+                ingestionService.ingest(request.getEndpoints())
         );
-
-        return ResponseEntity.ok(record);
     }
 
     @GetMapping("/records")
