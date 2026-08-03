@@ -1,4 +1,4 @@
-package com.example.Generic_Data_Ingestion_Service;
+package com.example.ingestion;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

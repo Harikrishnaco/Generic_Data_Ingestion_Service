@@ -1,4 +1,4 @@
-package com.example.Generic_Data_Ingestion_Service;
+package com.example.ingestion;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
